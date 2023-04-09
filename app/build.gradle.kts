@@ -1,9 +1,12 @@
 import com.example.mysunflowerstudy.Libraries
 import com.example.mysunflowerstudy.Configuration
+import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
 
 plugins {
+    kotlin("kapt")
     id("com.android.application")
     id("kotlin-android")
+    id("com.google.dagger.hilt.android") version "2.44" apply false
 }
 
 android {
@@ -55,6 +58,8 @@ android {
 
 dependencies {
 
+    kapt(Libraries.hiltCompiler)
+
     // test
     implementation(Libraries.junit)
     testImplementation(Libraries.junit)
@@ -68,6 +73,7 @@ dependencies {
     // google
     implementation(Libraries.material)
     implementation(Libraries.gson)
+    implementation(Libraries.hilt)
 
     // android x
     implementation(Libraries.androidxCore)
@@ -79,6 +85,7 @@ dependencies {
     implementation(Libraries.viewmodel)
     implementation(Libraries.navigation)
     implementation(Libraries.navigationUi)
+    implementation(Libraries.work)
 
     // network
     implementation(Libraries.okhttp3LoggingInterceptor)
@@ -87,4 +94,9 @@ dependencies {
 
     //
     implementation(Libraries.glide)
+}
+
+// Allow references to generated code
+kapt {
+    correctErrorTypes = true
 }
