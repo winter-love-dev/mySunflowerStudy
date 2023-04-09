@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">MySunflowerStudy</string>
 
-    <string name="plant_details_title">MySunflowerStudy</string>
+    <string name="plant_details_title" translatable="false">MySunflowerStudy</string>
+
+    <string name="my_garden_title" translation_description="Title for the 'My garden' screen where the user can see the list of plants that have been added to their garden." translatable="false">My garden</string>
+    <string name="plant_list_title" translation_description="Title for the plant list screen where the user can see a list of plants available to add to their garden." translatable="false">Plant list</string>
 
 </resources>

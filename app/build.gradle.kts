@@ -21,6 +21,8 @@ android {
         versionCode = Configuration.versionCode
         versionName = Configuration.versionName
 
+        vectorDrawables.useSupportLibrary = true
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 

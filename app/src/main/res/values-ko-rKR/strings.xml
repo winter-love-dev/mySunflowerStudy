@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MySunflowerStudy</string>
+
+    <string name="my_garden_title" translation_description="사용자가 정원에 추가된 식물 목록을 볼 수 있는 '내 정원' 화면의 제목입니다." translatable="false">My garden</string>
+    <string name="plant_list_title" translation_description="사용자가 정원에 추가할 수 있는 식물 목록을 볼 수 있는 식물 목록 화면의 제목입니다." translatable="false">Plant list</string>
+
+</resources>
