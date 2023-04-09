@@ -21,6 +21,9 @@ object Versions {
     const val okhttpLogging = "4.9.3"
     const val work = "2.8.0"
     const val hilt = "2.44"
+    const val safeArgs = "2.5.3"
+
+    const val room = "2.5.0"
 }
 
 object TestVersion {
@@ -43,7 +46,7 @@ object Libraries {
     // google
     const val material = "com.google.android.material:material:${Versions.material}"
     const val gson = "com.google.code.gson:gson:${Versions.gson}"
-    const val hiltCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hilt}"
+    const val hiltCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hilt}" // kapt
     const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
 
 
@@ -58,6 +61,9 @@ object Libraries {
     const val navigation = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
     const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
     const val work = "androidx.work:work-runtime-ktx:${Versions.work}"
+    const val safeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.safeArgs}"
+    const val room = "androidx.room:room-ktx:${Versions.room}"
+    const val roomCompiler = "androidx.room:room-compiler:${Versions.room}" // kapt
 
     // network
     const val okhttp3LoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okhttpLogging}"

@@ -6,7 +6,8 @@ plugins {
     kotlin("kapt")
     id("com.android.application")
     id("kotlin-android")
-    id("com.google.dagger.hilt.android") version "2.44" apply false
+    id("com.google.dagger.hilt.android")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -60,6 +61,7 @@ android {
 
 dependencies {
 
+    kapt(Libraries.roomCompiler)
     kapt(Libraries.hiltCompiler)
 
     // test
@@ -88,6 +90,7 @@ dependencies {
     implementation(Libraries.navigation)
     implementation(Libraries.navigationUi)
     implementation(Libraries.work)
+    implementation(Libraries.room)
 
     // network
     implementation(Libraries.okhttp3LoggingInterceptor)

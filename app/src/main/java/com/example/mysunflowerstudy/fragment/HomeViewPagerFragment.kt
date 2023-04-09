@@ -8,7 +8,9 @@ import com.example.mysunflowerstudy.adapter.SunflowerPagerAdapter
 import com.example.mysunflowerstudy.fragment.base.BaseFragment2
 import com.example.mysunflowerstudy.databinding.FragmentViewPagerBinding
 import com.google.android.material.tabs.TabLayoutMediator
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HomeViewPagerFragment: BaseFragment2<FragmentViewPagerBinding>() {
 
     override val layoutResourceId: Int

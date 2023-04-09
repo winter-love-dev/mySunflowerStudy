@@ -27,7 +27,7 @@ abstract class BaseFragment2<T: ViewDataBinding>: Fragment() {
     protected val baseCoroutine by lazy { CoroutineScope(Job() + Dispatchers.Main) }
 
     protected open fun initStartView() {}
-    protected abstract fun initAfterView()
+    protected open fun initAfterView() {}
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View =
         FragmentBaseBinding.inflate(inflater, container, false).run {

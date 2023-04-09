@@ -2,7 +2,7 @@
 <resources>
 
     <!-- To see how these attributes are used, please visit https://material.io/develop/android/theming/color/ -->
-    <style name="Base.Theme.MySunflowerStudy" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Base.Theme.MySunflowerStudy" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/sunflower_green_500</item>
         <item name="colorOnPrimary">@color/sunflower_yellow_500</item>
         <item name="colorPrimaryDark">@color/sunflower_green_700</item>

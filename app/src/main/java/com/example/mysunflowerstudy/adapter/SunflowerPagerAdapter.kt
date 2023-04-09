@@ -19,7 +19,7 @@ package com.example.mysunflowerstudy.adapter
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.mysunflowerstudy.fragment.GardenFragment
-import com.example.mysunflowerstudy.fragment.PlantListFragment
+import com.example.mysunflowerstudy.fragment.plant.PlantListFragment
 
 const val MY_GARDEN_PAGE_INDEX = 0
 const val PLANT_LIST_PAGE_INDEX = 1

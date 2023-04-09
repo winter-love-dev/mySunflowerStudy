@@ -1,4 +1,4 @@
-package com.example.mysunflowerstudy.fragment
+package com.example.mysunflowerstudy.fragment.plant
 
 import com.example.mysunflowerstudy.R
 import com.example.mysunflowerstudy.fragment.base.BaseFragment2
