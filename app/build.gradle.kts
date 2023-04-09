@@ -62,7 +62,6 @@ dependencies {
     androidTestImplementation(Libraries.androidxEspressoCore)
 
     // jetbrains
-    // implementation(Libraries.kotlinSerialization)
     implementation(Libraries.coroutinesCore)
     implementation(Libraries.coroutinesAndroid)
 
