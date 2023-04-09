@@ -16,7 +16,7 @@ object Versions {
     const val navigation = "2.5.3"
     const val glide = "4.15.1"
     const val gson = "2.10.1"
-    const val coroutines = "2.10.1"
+    const val coroutines = "1.6.1"
 
     const val retrofit = "2.9.0"
     const val okhttpLogging = "4.9.3"
@@ -32,12 +32,10 @@ object Libraries {
 
     // test
     const val junit = "junit:junit:${TestVersion.junit}"
-    const val androidxJunit = "androidx.test.ext:${TestVersion.androidxJunitVersion}"
+    const val androidxJunit = "androidx.test.ext:junit:${TestVersion.androidxJunitVersion}"
     const val androidxEspressoCore = "androidx.test.espresso:espresso-core:${TestVersion.androidxEspressoCoreVersion}"
 
     // jetbrains
-    const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
-    const val kotlinSerialization = "org.jetbrains.kotlin:kotlin-serialization:${Versions.kotlin}"
     const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
     const val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
 
@@ -51,10 +49,10 @@ object Libraries {
     const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
     const val viewPager2 = "androidx.viewpager2:viewpager2:${Versions.viewPager}"
     const val fragment = "androidx.fragment:fragment-ktx:${Versions.fragment}"
-    const val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:$${Versions.lifeCycle}"
+    const val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifeCycle}"
     const val viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifeCycle}"
-    const val navigation = "androidx.navigation:navigation-fragment-ktx:$${Versions.navigation}"
-    const val navigationUi = "androidx.navigation:navigation-ui-ktx:$${Versions.navigation}"
+    const val navigation = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
+    const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
 
     // network
     const val okhttp3LoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okhttpLogging}"
