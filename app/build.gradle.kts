@@ -24,6 +24,8 @@ android {
 
         vectorDrawables.useSupportLibrary = true
 
+        buildConfigField("String", "UNSPLASH_ACCESS_KEY", "\"" + getUnsplashAccess() + "\"")
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -104,4 +106,8 @@ dependencies {
 // Allow references to generated code
 kapt {
     correctErrorTypes = true
+}
+
+fun getUnsplashAccess(): String {
+    return project.findProperty("unsplash_access_key").toString()
 }
