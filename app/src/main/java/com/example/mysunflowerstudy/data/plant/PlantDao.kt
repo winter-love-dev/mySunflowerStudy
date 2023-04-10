@@ -23,7 +23,7 @@ import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
 
 /**
- * The Data Access Object for the Plant class.
+ * Dao == Data Access Object
  */
 @Dao
 interface PlantDao {

@@ -50,14 +50,13 @@ class PlantListViewModel @Inject internal constructor(
          *        }
          *    }.collect()
          *
-         * 2) A simpler version of 1). Since we're calling `collect`, we can consume
-         *    the elements in the `collect`'s lambda block instead of using the `onEach` operator.
-         *    This is the version that's used in the live code below.
+         * 2) 1)의 간단한 버전입니다.
+         *    'collect'를 호출하기 때문에 'on Each' 연산자를 사용하는 대신 'collect'의 람다 블록에 있는 요소를 사용할 수 있습니다.
+         *    아래 라이브 코드에서 사용되는 버전입니다.
          *
-         * 3) We can avoid creating a new coroutine using the `launchIn` terminal operator. In this
-         *    case, `onEach` is needed because `launchIn` doesn't take a lambda to consume the new
-         *    element in the Flow; it takes a `CoroutineScope` that's used to create a coroutine
-         *    internally.
+         * 3) 'LaunchIn' 터미널 연산자를 사용하여 새로운 코루틴을 만드는 것을 피할 수 있습니다.
+         *     이 경우 'onEach'는 흐름의 새 요소를 사용하기 위해 람다를 사용하지 않으므로 'onEach'가 필요합니다.
+         *     내부적으로 코루틴을 만드는데 사용되는 '코루틴 범위'가 필요합니다.
          *
          *    growZone.onEach { newGrowZone ->
          *        savedStateHandle.set(GROW_ZONE_SAVED_STATE_KEY, newGrowZone)
