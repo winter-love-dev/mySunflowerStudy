@@ -17,9 +17,13 @@ object Versions {
     const val glide = "4.15.1"
     const val gson = "2.10.1"
     const val coroutines = "1.6.1"
-
     const val retrofit = "2.9.0"
     const val okhttpLogging = "4.9.3"
+    const val work = "2.8.0"
+    const val hilt = "2.44"
+    const val safeArgs = "2.5.3"
+
+    const val room = "2.5.0"
 }
 
 object TestVersion {
@@ -42,6 +46,9 @@ object Libraries {
     // google
     const val material = "com.google.android.material:material:${Versions.material}"
     const val gson = "com.google.code.gson:gson:${Versions.gson}"
+    const val hiltCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hilt}" // kapt
+    const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
+
 
     // android x
     const val androidxCore = "androidx.core:core-ktx:${Versions.androidxCore}"
@@ -53,6 +60,10 @@ object Libraries {
     const val viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifeCycle}"
     const val navigation = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
     const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
+    const val work = "androidx.work:work-runtime-ktx:${Versions.work}"
+    const val safeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.safeArgs}"
+    const val room = "androidx.room:room-ktx:${Versions.room}"
+    const val roomCompiler = "androidx.room:room-compiler:${Versions.room}" // kapt
 
     // network
     const val okhttp3LoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okhttpLogging}"
@@ -61,4 +72,6 @@ object Libraries {
 
     //
     const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
+
+
 }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MySunflowerStudy</string>
+
+    <string name="menu_filter_by_grow_zone" translation_description="The label for the menu item to filter the displayed plants by grow zone.">Filter by grow zone</string>
+    <string name="plant_details_title" translatable="false">MySunflowerStudy</string>
+
+    <string name="my_garden_title" translation_description="사용자가 정원에 추가된 식물 목록을 볼 수 있는 '내 정원' 화면의 제목입니다." translatable="false">My garden</string>
+    <string name="plant_list_title" translation_description="사용자가 정원에 추가할 수 있는 식물 목록을 볼 수 있는 식물 목록 화면의 제목입니다." translatable="false">Plant list</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_plant_item_image" translation_description="'내 정원' 및 '식물 목록' 화면에 표시된 각 식물 이미지에 대한 접근성 텍스트입니다." translatable="false">Picture of plant</string>
+    <string name="gallery_content_description" translation_description="갤러리 화면으로 이동하기 위한 클릭 가능한 이미지에 대한 콘텐츠 설명" translatable="false">Navigate to gallery screen</string>
+    <string name="plant_detail_image_content_description" translation_description="플랜트 세부 정보 화면 상단에 표시되는 헤더/히어로 이미지에 대한 콘텐츠 설명입니다." translatable="false">Image of plant</string>
+    <string name="added_plant_to_garden" translation_description="사용자가 빈 정원에 식물을 추가할 때 표시되는 확인 텍스트." translatable="false">정원에 식물 추가</string>
+    <string name="watering_needs_prefix" translation_description="식물에 물을 얼마나 자주 주어야하는지 설명하는 텍스트의 접두사. 급수 필요 접미사와 함께 사용됩니다." translatable="false">Watering needs</string>
+    <plurals name="watering_needs_suffix">
+        <item quantity="one" translation_description="Suffix for the text describing how often a plant should be watered, singular. Used in combination with watering_needs_prefix: 'Watering needs: every day'.">매일</item>
+        <item quantity="other" translation_description="Suffix for the text describing how often a plant should be watered, plural. Used in combination with watering_needs_prefix: 'Watering needs: every 8 days'.">%d일마다</item>
+    </plurals>
+
+    <string name="menu_item_share_plant" translation_description="공유 메뉴 항목의 레이블" translatable="false">Share</string>
+    <string name="share_text_plant" translation_description="SNS 등에서 식물을 공유할 때 사용되는 기본 메시지입니다." translatable="false">Check out the %s plant in the Android Sunflower app</string>
+
+</resources>

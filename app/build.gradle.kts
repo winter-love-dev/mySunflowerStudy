@@ -1,9 +1,13 @@
 import com.example.mysunflowerstudy.Libraries
 import com.example.mysunflowerstudy.Configuration
+import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
 
 plugins {
+    kotlin("kapt")
     id("com.android.application")
     id("kotlin-android")
+    id("com.google.dagger.hilt.android")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -17,6 +21,10 @@ android {
         targetSdk = Configuration.targetSdk
         versionCode = Configuration.versionCode
         versionName = Configuration.versionName
+
+        vectorDrawables.useSupportLibrary = true
+
+        buildConfigField("String", "UNSPLASH_ACCESS_KEY", "\"" + getUnsplashAccess() + "\"")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -55,6 +63,9 @@ android {
 
 dependencies {
 
+    kapt(Libraries.roomCompiler)
+    kapt(Libraries.hiltCompiler)
+
     // test
     implementation(Libraries.junit)
     testImplementation(Libraries.junit)
@@ -68,6 +79,7 @@ dependencies {
     // google
     implementation(Libraries.material)
     implementation(Libraries.gson)
+    implementation(Libraries.hilt)
 
     // android x
     implementation(Libraries.androidxCore)
@@ -79,6 +91,8 @@ dependencies {
     implementation(Libraries.viewmodel)
     implementation(Libraries.navigation)
     implementation(Libraries.navigationUi)
+    implementation(Libraries.work)
+    implementation(Libraries.room)
 
     // network
     implementation(Libraries.okhttp3LoggingInterceptor)
@@ -87,4 +101,13 @@ dependencies {
 
     //
     implementation(Libraries.glide)
+}
+
+// Allow references to generated code
+kapt {
+    correctErrorTypes = true
+}
+
+fun getUnsplashAccess(): String {
+    return project.findProperty("unsplash_access_key").toString()
 }
